@@ -2,9 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { CurrencyProvider } from "./context/CurrencyContext";
-
-// ✅ THIS LINE FIXES EVERYTHING
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css"; // using Bootstrap for styling
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
