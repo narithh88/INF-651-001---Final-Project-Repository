@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { fetchRates as fetchCurrencyRates } from "../utility/api";
 
 const useCurrencyData = (baseCurrency) => {
   const [rates, setRates] = useState({});
@@ -7,11 +8,7 @@ const useCurrencyData = (baseCurrency) => {
 
   const fetchRates = async () => {
     try {
-      const res = await fetch(
-        `https://api.exchangerate-api.com/v4/latest/${baseCurrency}`
-      );
-      const data = await res.json();
-
+      const data = await fetchCurrencyRates(baseCurrency);
       setRates(data.rates);
       setLoading(false);
     } catch (err) {
