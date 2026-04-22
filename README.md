@@ -18,5 +18,5 @@ The project's main goal is to develop a real-time currency exchange rate display
 
 ## To Test: 
 
-- Install dependencies: `npm install`
+- Install dependencies: `npm install` from `package.json`
 - Start the development server: `npm run dev`
