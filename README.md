@@ -14,4 +14,9 @@ Members:
 
 The project's main goal is to develop a real-time currency exchange rate display web application that allows users to view exchange rates, convert between different currencies, and track historical trends.
 
+---
 
+## To Test: 
+
+-Install dependencies: `npm install`
+-Start the development server: `npm run dev`
